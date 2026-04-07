@@ -465,7 +465,7 @@ with tab3:
                 st.error(f"No test images found in {selected_dataset}/Test/")
 
 with tab4:
-    st.header("🔍 Failure Case Analysis")
+    st.header("Failure Case Analysis")
     st.markdown(
         "This section isolates **misclassifications** and groups them by class to show a representative sample of errors.")
 
@@ -544,7 +544,7 @@ with tab4:
                     st.pyplot(fig)
 
                     # Full searchable table for all failures
-                    st.subheader("📊 Complete Error Data")
+                    st.subheader("Complete Error Data")
                     failure_list = [
                         {"True Label": classes[labels_7class[idx]],
                          "Predicted Label": classes[predicted_classes[idx]],
